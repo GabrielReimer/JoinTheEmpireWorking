@@ -1,15 +1,15 @@
-// import {
-//   BufferAttribute,
-//   BufferGeometry,
-//   Float32BufferAttribute,
-//   InstancedBufferAttribute,
-//   InterleavedBuffer,
-//   InterleavedBufferAttribute,
-//   TriangleFanDrawMode,
-//   TriangleStripDrawMode,
-//   TrianglesDrawMode,
-//   Vector3,
-// } from "three";
+import {
+  BufferAttribute,
+  BufferGeometry,
+  Float32BufferAttribute,
+  InstancedBufferAttribute,
+  InterleavedBuffer,
+  InterleavedBufferAttribute,
+  TriangleFanDrawMode,
+  TriangleStripDrawMode,
+  TrianglesDrawMode,
+  Vector3,
+} from "three";
 
 function computeMikkTSpaceTangents(geometry, MikkTSpace, negateSign = true) {
   if (!MikkTSpace || !MikkTSpace.isReady) {
