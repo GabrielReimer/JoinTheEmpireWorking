@@ -2,19 +2,19 @@ import "/./style.css";
 //import * as THREE from "three";
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 //import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-import { GLTFLoader } from "/js/GLTFLoader.js";
+//import { GLTFLoader } from "/js/GLTFLoader.js";
 const loader = new GLTFLoader();
 
-loader.load(
-  "/./3dModels/star_destroyer.glb",
-  function (gltf) {
-    scene.add(gltf.scene);
-  },
-  undefined,
-  function (error) {
-    console.error(error);
-  }
-);
+// loader.load(
+//   "/./3dModels/star_destroyer.glb",
+//   function (gltf) {
+//     scene.add(gltf.scene);
+//   },
+//   undefined,
+//   function (error) {
+//     console.error(error);
+//   }
+// );
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
