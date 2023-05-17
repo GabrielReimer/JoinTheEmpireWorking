@@ -1,21 +1,3 @@
-//import "/./style.css";
-//import * as THREE from "three";
-//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-//import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
-// import { GLTFLoader } from "/js/GLTFLoader.js";
-// const loader = new GLTFLoader();
-
-// loader.load(
-//   "/./3dModels/star_destroyer.glb",
-//   function (gltf) {
-//     scene.add(gltf.scene);
-//   },
-//   undefined,
-//   function (error) {
-//     console.error(error);
-//   }
-// );
-
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
   75,
@@ -41,7 +23,7 @@ const material = new THREE.MeshStandardMaterial( {color: 0x01332d, wireframe: tr
 const icosa = new THREE.Mesh(geometry, material);
 scene.add(icosa);*/
 
-const spheretexture = new THREE.TextureLoader().load("/img/planetmap13.jpg");
+const spheretexture = new THREE.TextureLoader().load("./img/planetmap13.jpg");
 const planet = new THREE.Mesh(
   new THREE.SphereGeometry(600, 100, 16, 100),
   new THREE.MeshStandardMaterial({ map: spheretexture })
@@ -50,9 +32,9 @@ planet.rotateX(-Math.PI / 2);
 planet.position.set(2000, -500, 5500);
 scene.add(planet);
 
-const pointLight = new THREE.PointLight(0xffffff, 1, 2000);
+const pointLight = new THREE.PointLight(0xffffff, 1, 2500);
 pointLight.position.set(-300, 200, 800);
-const pointLight2 = new THREE.PointLight(0xffddaa, 1, 3500);
+const pointLight2 = new THREE.PointLight(0xffddaa, 1, 4500);
 pointLight2.position.set(300, -200, 800);
 scene.add(pointLight, pointLight2);
 
