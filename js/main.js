@@ -3,7 +3,7 @@ import "/./style.css";
 //import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 //import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 //import { GLTFLoader } from "/js/GLTFLoader.js";
-const loader = new GLTFLoader();
+//const loader = new GLTFLoader();
 
 // loader.load(
 //   "/./3dModels/star_destroyer.glb",
