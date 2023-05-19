@@ -31,9 +31,9 @@ const planet = new THREE.Mesh(
 planet.position.set(2000, -500, 5500);
 scene.add(planet);
 
-const pointLight = new THREE.PointLight(0xffffff, 1, 2000);
+const pointLight = new THREE.PointLight(0xffffff, 1, 5000);
 pointLight.position.set(-300, 200, 800);
-const pointLight2 = new THREE.PointLight(0xffddaa, 1, 3500);
+const pointLight2 = new THREE.PointLight(0xffddaa, 1, 5500);
 pointLight2.position.set(300, -200, 800);
 scene.add(pointLight, pointLight2);
 
