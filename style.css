@@ -73,6 +73,7 @@ header {
   height: 6rem;
 }
 nav {
+  width: auto;
   display: inherit;
   background: var(--light-bg);
   padding: 0.5rem;
@@ -248,6 +249,7 @@ footer {
   grid-column: 1 / span 12;
   background: var(--dark-bg);
   padding: 2.1rem;
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -257,6 +259,9 @@ footer div {
   display: inherit;
   gap: 0.5rem;
   align-items: inherit;
+}
+footer div p {
+  font-size: 0.8rem;
 }
 
 @media (max-width: 1100px) {
@@ -268,7 +273,6 @@ footer div {
   nav {
     background: var(--light-bg-filled);
   }
-
   .page {
     gap: 2rem 0;
   }
@@ -306,7 +310,7 @@ footer div {
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   #open-modal {
     width: 100%;
   }
