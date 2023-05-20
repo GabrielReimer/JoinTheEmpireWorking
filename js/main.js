@@ -53,7 +53,6 @@ function moveCamera() {
   camera.position.z = 2000 + t * 4;
   camera.rotation.y = Math.PI / -8 + t * 0.0002;
   planet.position.z = t * 4;
-  renderer.setSize(window.innerWidth, window.innerHeight);
 }
 document.body.onscroll = moveCamera;
 moveCamera();
@@ -63,8 +62,6 @@ function animate() {
   planet.rotation.x += 0.0001;
   planet.rotation.z += 0.0001;
   planet.rotation.y += 0.0001;
-  camera.innerWidth = window.innerWidth;
-  camera.innerHeight = window.innerHeight;
 
   renderer.render(scene, camera);
   requestAnimationFrame(animate);
