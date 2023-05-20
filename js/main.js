@@ -62,6 +62,8 @@ function animate() {
   planet.rotation.x += 0.0001;
   planet.rotation.z += 0.0001;
   planet.rotation.y += 0.0001;
+  camera.innerWidth = window.innerWidth;
+  camera.innerHeight = window.innerHeight;
 
   renderer.render(scene, camera);
   requestAnimationFrame(animate);
